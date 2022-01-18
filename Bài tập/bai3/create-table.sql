@@ -1,3 +1,7 @@
+create database baitap_18_01;
+
+use baitap_18_01;
+
 create table NHACUNGCAP(
 MaNhaCC	nvarchar(50) primary key,
 TenNhaCC nvarchar(255),
