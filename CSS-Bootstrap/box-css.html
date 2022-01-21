@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width: 300px;
+            height: 150px;
+            left: 50px;
+            top: 50px;
+            border: 1px solid red;
+            background-color: blue;
+            position: relative;
+        }
+
+        #div2 {
+            width: 300px;
+            height: 100px;
+            left: 0px;
+            top: 0px;
+            /*margin: 10px;*/
+            /*padding: 10px;*/
+            background-color: red;
+            border: 1px solid blue;
+            /*position: relative;*/
+        }
+
+        p {
+            margin: 0;
+            border: 1px solid blue;
+            padding: 10px 20px 30px 40px;
+            width: 50%;
+            position: relative;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div2">
+        <p>hihi</p>
+    </div>
+</div>
+
+<!--thẻ div: dùng để gom nhóm 1 số thành phần của css, có thể theo chức năng-->
+<!--box CSS gồm 4 thành phần:-->
+<!--    + content: lõi của thẻ, các element hoặc nội dung của thẻ-->
+<!--    + padding: phần khoảng cách giữa content và viền của thẻ-->
+<!--    + border: viền của thẻ-->
+<!--    + margin: phần khoảng cách giữa thẻ đang được chỉ định và cha của nó-->
+
+<!--position: định vị vị trí của 1 element trong html-->
+<!--    + static: vị trí mặc định, k bị tác động bởi các thuộc tính top, left-->
+<!--    + relative: vị trí của element dựa vào top, left so với cha của nó-->
+<!--    + absolute: vị trí của element dựa vào top, left so với cha của nó,
+tuy nhiên element cha cũng phải được khai báo position != static, nếu không định vị so với body -->
+<!--    + fixed: vị trí của element dựa vào top, left so với body (màn hình)-->
+
+<!--z-index: để sắp xếp vị trí của các phần tử chồng lên nhau; -->
+<!--áp dụng khi có định vị position-->
+<!--xếp xuống dưới: -1-->
+<!--xếp nổi lên trên thì là : 1-->
+</body>
+</html>
